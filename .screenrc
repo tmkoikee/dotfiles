@@ -1,0 +1,21 @@
+escape ^Tt
+vbell off
+
+startup_message off
+
+encoding utf8
+hardstatus on
+hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+
+startup_message off
+multiuser on
+scrollback 8000
+
+bind ^U encoding utf8
+bind ^E encoding eucJP
+bind ^t next
+bind w windowlist -b
+
+autodetach on
+
+termcapinfo xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
