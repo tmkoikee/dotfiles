@@ -5,11 +5,11 @@ startup_message off
 
 encoding utf8
 hardstatus on
-hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+hardstatus alwayslastline "%{= gk}[%m/%d %02c] %{gW} %-w%{= wk}%n%t%{-}%+w %=%{gk}$USER@$HOSTNAME[$LANG] "
 
 startup_message off
 multiuser on
-scrollback 8000
+defscrollback 800000
 
 bind ^U encoding utf8
 bind ^E encoding eucJP
