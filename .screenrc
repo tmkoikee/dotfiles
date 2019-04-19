@@ -4,11 +4,23 @@ vbell off
 startup_message off
 
 encoding utf8
+
+# set $TERM env
+term screen
+
+zombie
+
 hardstatus on
-hardstatus alwayslastline "%{= gk}[%m/%d %02c] %{gW} %-w%{= wk}%n%t%{-}%+w %=%{gk}$USER@$HOSTNAME[$LANG] "
+# display status
+#hardstatus alwayslastline "%?%h%:#%n %t @%H)%? %{= dd}%-035= %{= wB}%l %Y-%m-%d %02c:%s"
+hardstatus alwayslastline "%?%h%:#%n %t @%H)%? %{= dd}%-050= %{= wD} %Y-%m-%d %02c:%s $USER@$HOSTNAME[$LANG]"
+caption always "%{=r dd}%-Lw%40L>%?%F%{+b kG}%:[%{=r dd}%? %n%f %t %?%F%{-}%:]%?%+Lw"
 
 startup_message off
-multiuser on
+
+# Protection from attacks
+multiuser off
+idle off
 defscrollback 800000
 
 bind ^U encoding utf8
@@ -16,6 +28,21 @@ bind ^E encoding eucJP
 bind ^t next
 bind w windowlist -b
 
+deflogin off
+defscrollback 0
+defbce on
+
+autonuke on
 autodetach on
 
 termcapinfo xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+
+# message display time
+msgwait 3
+msgminwait 2
+
+# split line color
+sorendition "+rb .R"
+
+# change directory to home
+chdir
