@@ -21,7 +21,6 @@ startup_message off
 # Protection from attacks
 multiuser off
 idle off
-defscrollback 800000
 
 bind ^U encoding utf8
 bind ^E encoding eucJP
@@ -29,7 +28,7 @@ bind ^t next
 bind w windowlist -b
 
 deflogin off
-defscrollback 0
+defscrollback 800000
 defbce on
 
 autonuke on
