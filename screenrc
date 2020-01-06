@@ -1,9 +1,10 @@
 escape ^Tt
 vbell off
-
 startup_message off
 
 encoding utf8
+defutf8 on
+defencoding utf8
 
 # set $TERM env
 term screen
