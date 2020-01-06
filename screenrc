@@ -12,7 +12,6 @@ zombie
 
 hardstatus on
 # display status
-#hardstatus alwayslastline "%?%h%:#%n %t @%H)%? %{= dd}%-035= %{= wB}%l %Y-%m-%d %02c:%s"
 hardstatus alwayslastline "%?%h%:#%n %t @%H)%? %{= dd}%-050= %{= wD} %Y-%m-%d %02c:%s $USER@$HOSTNAME[$LANG]"
 caption always "%{=r dd}%-Lw%40L>%?%F%{+b kG}%:[%{=r dd}%? %n%f %t %?%F%{-}%:]%?%+Lw"
 
