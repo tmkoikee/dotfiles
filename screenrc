@@ -1,5 +1,6 @@
 escape ^Tt
 vbell off
+
 startup_message off
 
 encoding utf8
@@ -13,7 +14,7 @@ zombie
 
 hardstatus on
 # display status
-hardstatus alwayslastline "%?%h%:#%n %t @%H)%? %{= dd}%-050= %{= wD} %Y-%m-%d %02c:%s $USER@$HOSTNAME[$LANG]"
+hardstatus alwayslastline "%?%h%:#%n %t ($USER@%H)%? %{= dd}%-035= %{= wD} %Y-%m-%d %02c:%s [$LANG]"
 caption always "%{=r dd}%-Lw%40L>%?%F%{+b kG}%:[%{=r dd}%? %n%f %t %?%F%{-}%:]%?%+Lw"
 
 startup_message off
