@@ -32,9 +32,6 @@ setopt no_flow_control
 
 # Customize to my needs...
 eval "$(starship init zsh)"
-export PATH=/Users/tomohiro.koike/.cargo/bin:$PATH
-export PATH=/Users/tomohiro.koike/bin:$PATH
 export PATH=/opt/local/bin:$PATH
 
-alias snowsql=/Applications/SnowSQL.app/Contents/MacOS/SnowSQL
 alias ll='exa -l -snew'
