@@ -13,7 +13,9 @@ setopt share_history
 # enable completion
 autoload -Uz compinit && compinit
 
-# 補完候補をそのまま探す -> 小文字を大文字に変えて探す -> 大文字を小文字に変えて探す
+# Find completion candidates as they are.
+# -> Change input from lowercase to uppercase to find suggestions.
+# -> Change input from uppercase to lowercase to find suggestions.
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' '+m:{[:upper:]}={[:lower:]}'
 
 ### 補完方法毎にグループ化する。
