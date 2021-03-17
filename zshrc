@@ -1,6 +1,3 @@
-source .zshenv
-source .zprofile
-
 # history
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
