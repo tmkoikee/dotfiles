@@ -4,7 +4,7 @@ ts=$(date "+%s")
 
 # screen
 if [ -e ~/.screenrc ]; then
-    mv ~/.screenrc ~/.screenrc.org.${ts}
+    mv ~/.screenrc ~/.screenrc.saved.${ts}
 fi
 ln -s screenrc ~/.screenrc
 
@@ -12,12 +12,12 @@ ln -s screenrc ~/.screenrc
 ## starship
 mkdir -p ~/.config
 if [ -e ~/.config/starship.toml ]; then
-    mv ~/.config/starship.toml ~/.config/starship.toml.org.${ts}
+    mv ~/.config/starship.toml ~/.config/starship.toml.saved.${ts}
 fi
 ln -s starship.toml ~/.config/starship.toml
 
 ## zshrc
 if [ -e ~/.zshrc ]; then
-    mv ~/.zshrc ~/.zshrc.org.${ts}
+    mv ~/.zshrc ~/.zshrc.saved.${ts}
 fi
 ln -s zshrc ~/.zshrc
