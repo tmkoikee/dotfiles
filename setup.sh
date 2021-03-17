@@ -15,3 +15,9 @@ if [ -e ~/.config/starship.toml ]; then
     mv ~/.config/starship.toml ~/.config/starship.toml.org.${ts}
 fi
 ln -s starship.toml ~/.config/starship.toml
+
+## zshrc
+if [ -e ~/.zshrc ]; then
+    mv ~/.zshrc ~/.zshrc.org.${ts}
+fi
+ln -s zshrc ~/.zshrc
