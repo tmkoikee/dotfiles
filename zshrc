@@ -27,6 +27,8 @@ setopt auto_cd
 
 # disable ctrl+s, ctrl+q
 setopt no_flow_control
+bindkey -e
+bindkey '^R' history-incremental-search-backward
 
 # Customize to my needs...
 eval "$(starship init zsh)"
