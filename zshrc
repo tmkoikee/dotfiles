@@ -31,5 +31,7 @@ setopt no_flow_control
 # Customize to my needs...
 eval "$(starship init zsh)"
 export PATH=/opt/local/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 alias ll='exa -l -snew'
