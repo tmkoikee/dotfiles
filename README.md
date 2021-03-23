@@ -12,7 +12,9 @@ A repository for managing some dotfiles.
 ## Directory Configuration
   - dotfiles
     - screenrc
+    - zshrc
+    - zshenv
+    - zprofile
 
 ## Author
-
   - [bornite](https://github.com/bornite)
