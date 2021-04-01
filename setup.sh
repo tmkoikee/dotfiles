@@ -21,3 +21,9 @@ if [ -e ~/.zshrc ]; then
     mv ~/.zshrc ~/.zshrc.saved.${ts}
 fi
 ln -s zshrc ~/.zshrc
+
+## zshenv
+if [ -e ~/.zshenv ]; then
+    mv ~/.zshenv ~/.zshenv.saved.${ts}
+fi
+ln -s zshenv ~/.zshenv
