@@ -27,3 +27,9 @@ if [ -e ~/.zshenv ]; then
     mv ~/.zshenv ~/.zshenv.saved.${ts}
 fi
 ln -s zshenv ~/.zshenv
+
+## zprofile
+if [ -e ~/.zprofile ]; then
+    mv ~/.zprofile ~/.zprofile.saved.${ts}
+fi
+ln -s zprofile  ~/.zprofile
